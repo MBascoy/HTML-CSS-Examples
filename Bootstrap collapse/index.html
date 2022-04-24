@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <script type="text/javascript">
+      function collapseFunction(){
+        var elementToCollapse = document.getElementById("content");
+        new bootstrap.Collapse(elementToCollapse)
+      }
+    </script>
+
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#content" aria-expanded="false" aria-controls="collapseExample">
+      Boton para colapsar
+    </button>
+
+    <div id="content" class="collapse" style="width:30%;">
+      <p>texto</p>
+      <input type="button" value="button"/>
+    </div>
+
+    <p>
+      <a href="#" onclick="collapseFunction()">Link para colapsar</a>
+    </p>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
